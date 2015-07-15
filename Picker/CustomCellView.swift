@@ -13,7 +13,8 @@ class CustomCellView: UICollectionViewCell {
     static let cardLayoutcellIdentifier = "CustomCellIdentifier"
     
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var descriptionLabel: UILabel!
+    
+    @IBOutlet weak var descriptionLabel: UITextView!
     @IBOutlet weak var productTypeLabel: UILabel!
     @IBOutlet weak var regionLabel: UILabel!
     @IBOutlet weak var progressView: UIProgressView!
