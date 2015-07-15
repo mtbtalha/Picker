@@ -12,6 +12,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
 
 
     
+
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
@@ -35,9 +36,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
        // let data = NSData(contentsOfURL: url!)
         cell.imageView.sd_setImageWithURL(url!)
         cell.descriptionLabel.text = "Simple Shoes: Help get Quality Footwear back on your feet"
-        cell.descriptionLabel.numberOfLines = 1
-        cell.descriptionLabel.minimumScaleFactor = 0.5
-        cell.descriptionLabel.adjustsFontSizeToFitWidth = true
+        cell.descriptionLabel.editable = false
         
         cell.productTypeLabel.text = "Footwear"
         cell.productTypeLabel.numberOfLines = 1
